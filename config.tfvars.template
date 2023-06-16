@@ -1,0 +1,15 @@
+gcp_project = "구글 프로젝트명"
+gcp_region  = "asia-northeast3"
+gcp_zone    = "asia-northeast3-a"
+
+kubernetes_config_path    = "kubeconfig 폴더"
+kubernetes_config_context = "쿠버네티스 컨텍스트 명"
+
+keycloak_admin_username = "keycloak 유저명"
+keycloak_admin_password = "keycloak 비밀번호"
+
+postgres_host     = "hmb-db.default.svc.cluster.local"
+postgres_port     = 5432
+postgres_database = "postgres 데이터베이스"
+postgres_username = "postgres 유저명"
+postgres_password = "postgres 비밀번호"
