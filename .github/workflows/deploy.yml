@@ -44,6 +44,7 @@ jobs:
                   echo 'postgres_host = "${{vars.POSTGRES_HOST}}"'                            >> ./config.tfvars
                   echo 'postgres_port = ${{vars.POSTGRES_PORT}}'                              >> ./config.tfvars
                   echo 'postgres_database = "${{ vars.POSTGRES_DATABASE }}"'                  >> ./config.tfvars
+                  echo 'postgres_schema = "${{ vars.POSTGRES_SCHEMA }}"'                  >> ./config.tfvars
                   echo 'postgres_username = "${{ secrets.POSTGRES_USERNAME }}"'               >> ./config.tfvars
                   echo 'postgres_password = "${{ secrets.POSTGRES_PASSWORD }}"'               >> ./config.tfvars
             - name: "Terraform Apply"
