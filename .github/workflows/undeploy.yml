@@ -53,8 +53,6 @@ jobs:
                   echo 'postgres_password = "${{ secrets.POSTGRES_PASSWORD }}"'               >> ./config.tfvars
             - name: "Terraform Destroy"
               run: |
-                  # 
-                  cd .deploy
                   #          
                   terraform init
                   terraform destroy -var-file ../config.tfvars -auto-approve
